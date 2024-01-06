@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <meta name="description" content="Charmander pokeball">
     <title>Pokemon</title>
     <style>
         * {
@@ -38,6 +39,7 @@
         .ball {
             width: 80px;
             height: 80px;
+            transform: rotateZ(180deg);
         }
 
         .top {
@@ -58,7 +60,7 @@
         .pokemon img {
             width: 100px;
             height: 100px;
-            transform: rotateZ(180deg) translateX(10px) translateY(38px);
+            transform: translateX(-7px) translateY(-45px);
         }
 
         .bottom {
@@ -93,7 +95,7 @@
                     <img src="assets/pokeball-top.png" />
                 </div>
                 <div class="pokemon">
-                    <img src="assets/charmandar.png" />
+                    <img src="assets/charmander.png" />
                 </div>
                 <div class="bottom">
                     <img src="assets/pokeball-bottom.png" />
@@ -118,7 +120,7 @@
             tl
                 .to(".ball", {
                     xPercent: 105,
-                    rotateZ: "-180 deg",
+                    rotateZ: "-0 deg",
                 })
                 .to(".top", {
                     yPercent: -150,
